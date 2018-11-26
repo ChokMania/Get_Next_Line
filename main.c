@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: judumay <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 16:50:23 by judumay           #+#    #+#             */
-/*   Updated: 2018/11/26 16:53:05 by judumay          ###   ########.fr       */
+/*   Updated: 2018/11/26 17:30:27 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,6 @@ int		main(int argc, char **argv)
 			printf("\n%d eme FD\n\n", i);
 	}
 	printf("LAST %d - |%s|\n", code, line);
+	free(line);
 	return (0);
 }
