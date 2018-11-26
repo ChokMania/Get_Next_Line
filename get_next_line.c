@@ -6,7 +6,7 @@
 /*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 10:56:39 by judumay           #+#    #+#             */
-/*   Updated: 2018/11/26 17:49:32 by judumay          ###   ########.fr       */
+/*   Updated: 2018/11/26 19:51:48 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int            get_next_line(const int fd, char **line)
     int            ret;
     char        buf[BUFF_SIZE + 1];
     char        *t;
-    static char    *s[2147483647];
+    static char    *s[2147483648];
 
     if (BUFF_SIZE < 1 || fd < 0 || !line || (!s[fd] && !(s[fd] = ft_strnew(1))))
         return (-1);
