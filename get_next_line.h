@@ -6,14 +6,14 @@
 /*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 13:52:35 by judumay           #+#    #+#             */
-/*   Updated: 2018/11/24 19:14:27 by judumay          ###   ########.fr       */
+/*   Updated: 2018/11/28 16:23:07 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-# include "libft/libft.h"
+# include "libft/includes/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
