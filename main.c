@@ -6,7 +6,7 @@
 /*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 16:50:23 by judumay           #+#    #+#             */
-/*   Updated: 2018/11/26 17:30:27 by judumay          ###   ########.fr       */
+/*   Updated: 2018/11/29 10:15:27 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,7 @@ int		main(int argc, char **argv)
 	printf("Premier FD\n\n");
 	while (i < argc)
 	{
-		if ((fd = open(argv[i], O_RDONLY)) == -1)
-			ft_exit("Error: Can't open file");
+		fd = open(argv[i], O_RDONLY)) == -1;
 		while ((code = get_next_line(fd, &line)) > 0)
 		{
 			len = ft_strlen(line);
