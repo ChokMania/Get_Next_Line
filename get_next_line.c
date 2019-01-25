@@ -6,7 +6,7 @@
 /*   By: judumay <judumay@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 10:56:39 by judumay           #+#    #+#             */
-/*   Updated: 2018/11/26 19:51:48 by judumay          ###   ########.fr       */
+/*   Updated: 2018/12/03 11:37:13 by judumay          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int            get_next_line(const int fd, char **line)
         return (-1);
     while (!ft_strchr(s[fd], '\n') && (ret = read(fd, buf, BUFF_SIZE)) > 0)
     {
-        buf[ret] = ‘\0’;
+        buf[ret] = '\0';
         t = s[fd];
         if (!(s[fd] = ft_strjoin(t, buf)))
             return (-1);
